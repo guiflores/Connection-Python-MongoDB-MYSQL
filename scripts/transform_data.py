@@ -42,7 +42,7 @@ def save_csv(df, path):
 if __name__ == "__main__":
 
     # estabelecendo a conexão e recuperando os dados do MongoDB
-    client = connect_mongo("mongodb+srv://guifpda:010203@cluster-pipeline.efhgr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster-pipeline")
+    client = connect_mongo()
     db = create_connect_db(client, "db_produtos_desafio")
     col = create_connect_collection(db, "produtos")
 
